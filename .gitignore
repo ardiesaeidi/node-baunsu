@@ -1,0 +1,7 @@
+.DS_Store
+*.swp
+*~.nib
+
+node_modules
+*.log
+
