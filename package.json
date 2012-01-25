@@ -11,4 +11,9 @@
       , "url" : "https://github.com/seppuku/node-baunsu"
     }
   , "keywords": ["bounce", "bounced email", "bounce detection", "bounce parser", "email", "email parser"]
+  , "dependencies" : {
+      "hasshu" : ">=0.2.0"
+    }
+  , "license": "MIT"
+
 }
