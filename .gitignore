@@ -3,5 +3,6 @@
 *~.nib
 
 node_modules
+.idea
 *.log
 

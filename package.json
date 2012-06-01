@@ -2,18 +2,18 @@
   "name": "baunsu"
   , "description": "Library to parse and detect bounced emails"
   , "version": "0.2.1"
-  , "engines": ["node >= 0.6.0"]
+  , "engines": { "node": "*" }
   , "main": "./lib/baunsu.js"
   , "author": "Ardie Saeidi <ardalan.saeidi@gmail.com>"
   , "repository" :
     {
       "type" : "git"
-      , "url" : "https://github.com/seppuku/node-baunsu"
+      , "url" : "https://github.com/ardiesaeidi/node-baunsu"
     }
   , "keywords": ["bounce", "bounced email", "bounce detection", "bounce parser", "email", "email parser"]
   , "dependencies" : {
-      "hasshu" : ">=0.2.0",
-      "iconv" : ">=1.0.0"
+      "hasshu" : "0.2.x",
+      "iconv" : "1.x.x"
      }
   , "license": "MIT"
 }
