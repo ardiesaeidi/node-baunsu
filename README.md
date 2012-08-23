@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/ardiesaeidi/node-baunsu.png)](http://travis-ci.org/ardiesaeidi/node-baunsu)
 Baunsu
 ======
 Baunsu (bounce in japanese) is an email bounce detection library inspired by [Lamson Project's bounce detection algorithm](http://lamsonproject.org/blog/2009-07-09.html "Lamson Project's bounce detection algorithm").
