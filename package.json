@@ -5,6 +5,9 @@
   , "engines": { "node": "*" }
   , "main": "./lib/baunsu.js"
   , "author": "Ardie Saeidi <ardalan.saeidi@gmail.com>"
+  , "contributors": [
+      "Dmitry Shirokov <deadrunk@gmail.com>"
+    ]
   , "repository" :
     {
       "type" : "git"
@@ -14,6 +17,12 @@
   , "dependencies" : {
       "hasshu" : "0.2.x",
       "iconv" : "1.x.x"
-     }
+    }
+  , "devDependencies": {
+      "vows": "latest"
+    }
+  , "scripts": {
+      "test": "vows tests"
+    }
   , "license": "MIT"
 }
