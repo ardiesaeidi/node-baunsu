@@ -5,7 +5,7 @@ var fs = require('fs'),
   Baunsu = require('../lib/baunsu');
 
 
-var emailDir = './emails/',
+var emailDir = __dirname + '/emails/',
   autoEmails = [];
 
 
@@ -33,7 +33,7 @@ autoEmails.forEach(function(file) {
         self.callback(err, result);
       });
 
-      bounce.detect(email);    
+      bounce.detect(email);
 
     },
     'Is probably not a bounce': function(result) {

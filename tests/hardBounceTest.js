@@ -5,7 +5,7 @@ var fs = require('fs'),
   Baunsu = require('../lib/baunsu');
 
 
-var emailDir = './emails/',
+var emailDir = __dirname + '/emails/',
   bouncedEmails = [];
 
 
