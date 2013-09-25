@@ -5,7 +5,7 @@ var fs = require('fs'),
   Baunsu = require('../lib/baunsu'),
   BaunsuHeaders = require('../lib/baunsuHeaders');
 
-var emailDir = './emails/',
+var emailDir = __dirname + '/emails/',
   bouncedEmails = [];
 
 
@@ -113,7 +113,7 @@ exports[testName + ':detect'] = {
     var match = matches[0];
     assert.isObject(match);
     assert.isString(match.header);
-    assert.isArray(match.matches); 
+    assert.isArray(match.matches);
   }
 };
 
