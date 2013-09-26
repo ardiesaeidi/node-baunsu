@@ -5,22 +5,24 @@ Baunsu (bounce in japanese) is an email bounce detection library inspired by [La
 
 Usage
 ------
-    var fs = require('fs'), 
-      Baunsu = require('baunsu');
 
-    fs.readFile('./bouncedEmail.txt', function(err, data) {
-      var bounce = new Baunsu();
-  
-      bounce.on('end', function(err, baunsuResult) {
-        if (err)
-          throw err;
-  
-        console.log(baunsuResult.bounced);
-      });
-  
-      bounce.detect(data);
-    });
-    
+```javascript
+var fs = require('fs'),
+  Baunsu = require('baunsu');
+
+fs.readFile('./bouncedEmail.txt', function(err, data) {
+  var bounce = new Baunsu();
+
+  bounce.on('end', function(err, baunsuResult) {
+    if (err)
+      throw err;
+
+    console.log(baunsuResult.bounced);
+  });
+
+  bounce.detect(data);
+});
+```
 
 
 Installation
@@ -90,12 +92,14 @@ status
 -------
 Returns object containing enhanced status code, class, subject and detail.
 
-    { 
-      code: string,
-      class: { code: number, message: '' },
-      subject: { code: number, message: '' },
-      detail: { code: number, message: '' }
-    }
+```javascript
+{
+  code: string,
+  class: { code: number, message: '' },
+  subject: { code: number, message: '' },
+  detail: { code: number, message: '' }
+}
+```
 
 remoteMta
 ----------
