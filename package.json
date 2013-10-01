@@ -1,7 +1,7 @@
 {
   "name": "baunsu"
   , "description": "Library to parse and detect bounced emails"
-  , "version": "0.2.1"
+  , "version": "0.2.2"
   , "engines": { "node": "*" }
   , "main": "./lib/baunsu.js"
   , "author": "Ardie Saeidi <ardalan.saeidi@gmail.com>"

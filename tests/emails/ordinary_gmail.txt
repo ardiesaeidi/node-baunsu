@@ -1,0 +1,48 @@
+Delivered-To: username@gmail.com
+Received: by 10.49.39.2 with SMTP id l2csp279956qek;
+        Wed, 25 Sep 2013 17:56:16 -0700 (PDT)
+X-Received: by 10.224.75.200 with SMTP id z8mr271527.71.138015691234;
+        Wed, 25 Sep 2013 17:56:16 -0700 (PDT)
+Return-Path: <noreply@github.com>
+Received: from github-smtp2a-cp1.github.net (github-smtp2-ext5.iad.github.net. [192.30.252.196])
+        by mx.google.com with ESMTP id i9si8196658qce.17.1969.12.31.16.00.00;
+        Wed, 25 Sep 2013 17:56:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@github.com designates 192.30.252.196 as permitted sender) client-ip=192.30.252.196;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of noreply@github.com designates 192.30.252.196 as permitted sender) smtp.mail=noreply@github.com
+Date: Wed, 25 Sep 2013 17:56:15 -0700
+From: harinirao <notifications@github.com>
+Reply-To: WhateverCorp <reply+i-18088205-123456@reply.github.com>
+To: WhateverCorp <direct-web@noreply.github.com>
+Message-ID: <whatever/pull/904/12345@github.com>
+In-Reply-To: <whatever/pull/904@github.com>
+References: <whatever/pull/904@github.com>
+Subject: Re: [direct-web] Plan versions (#904)
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5243862ff28b0_7dde825d488898";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Precedence: list
+X-GitHub-Recipient: runk
+List-ID: WhateverCorp <whatever.github.com>
+List-Archive: https://github.com/WhateverCorp
+List-Post: <mailto:reply+i-18088205-123456@reply.github.com>
+List-Unsubscribe: <mailto:unsub+i-18088205-123456@reply.github.com>,
+ <https://github.com/notifications/unsubscribe/123456>
+X-GitHub-Recipient-Address: username@gmail.com
+
+
+----==_mimepart_5243862ff28b0_7dde825d488898
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello there
+----==_mimepart_5243862ff28b0_7dde825d488898
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello there</p>
+----==_mimepart_5243862ff28b0_7dde825d488898--
