@@ -6,7 +6,8 @@
   , "main": "./lib/baunsu.js"
   , "author": "Ardie Saeidi <ardalan.saeidi@gmail.com>"
   , "contributors": [
-      "Dmitry Shirokov <deadrunk@gmail.com>"
+      "Dmitry Shirokov <deadrunk@gmail.com>",
+      "Drew Worthey <drew@drewworthey.com>"
     ]
   , "repository" :
     {
@@ -16,7 +17,7 @@
   , "keywords": ["bounce", "bounced email", "bounce detection", "bounce parser", "email", "email parser"]
   , "dependencies" : {
       "hasshu" : "0.2.x",
-      "iconv" : "1.x.x"
+      "iconv-lite" : "0.2.x"
     }
   , "devDependencies": {
       "vows": "latest"
