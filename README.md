@@ -2,7 +2,6 @@ Baunsu
 ======
 Baunsu (bounce in japanese) is an email bounce detection library inspired by [Lamson Project's bounce detection algorithm](http://lamsonproject.org/blog/2009-07-09.html "Lamson Project's bounce detection algorithm").
 
-
 Usage
 ------
 
@@ -24,6 +23,13 @@ fs.readFile('./bouncedEmail.txt', function(err, data) {
 });
 ```
 
+*Note*: 
+
+The bouncedEmail.txt must contains a 'bounced error mail'. You can find examples in the **tests/emails** directory
+
+These mails are returned by a mailserver when it can't deliver the message.
+
+You can use this module by hooking it to your mailserver whenever a bounced mail is received, and do something for it (such as flagging the email address, preventing further bounces)
 
 Installation
 ============
