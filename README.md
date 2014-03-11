@@ -1,8 +1,9 @@
-Baunsu
+# Baunsu
 ======
 Baunsu (bounce in japanese) is an email bounce detection library inspired by [Lamson Project's bounce detection algorithm](http://lamsonproject.org/blog/2009-07-09.html "Lamson Project's bounce detection algorithm").
 
-Usage
+
+## Usage
 ------
 
 ```javascript
@@ -23,7 +24,7 @@ fs.readFile('./bouncedEmail.txt', function(err, data) {
 });
 ```
 
-*Note*: 
+**Note**:
 
 The bouncedEmail.txt must contains a 'bounced error mail'. You can find examples in the **tests/emails** directory
 
@@ -31,71 +32,61 @@ These mails are returned by a mailserver when it can't deliver the message.
 
 You can use this module by hooking it to your mailserver whenever a bounced mail is received, and do something for it (such as flagging the email address, preventing further bounces)
 
-Installation
+
+## Installation
 ============
     npm install baunsu
 
 
 
-Baunsu
+## Baunsu API
 ===============
 
-## Methods:
+### Methods:
 
-detect(msg: Buffer or string)
--------
+#### detect(msg: Buffer or string)
 Detects bounce signatures in email asynchronously.
 
-detectSync(msg: Buffer or string)
------------
+#### detectSync(msg: Buffer or string)
 Detects bounce signatures in email and returns a BaunsuResult object.
 
 
-## Events:
+### Events:
 
-'line': function(line) {}
---------------------------
+#### 'line': function(line) {}
 Emits every line being walked by baunsu.
 
-'match': function(match) {}
----------------------------
+#### 'match': function(match) {}
 Emitted every time a bounce header is matched.
     { header: string, match: string }
 
-'detect': function(detect) {}
------------------------------
+#### 'detect': function(detect) {}
 Emiited every time bounce signature is detected.
     { header: string, matches: array }
 
-'end': function(baunsuResult) {}
---------------------------------
+#### 'end': function(baunsuResult) {}
 Emitted at the end of bounce detection.
 
 
-
-Baunsu Result
+## Baunsu Result
 ================
 
-## Properties:
+### Properties:
 
-matches
---------
+#### matches
 Returns a hash of matched email headers and regex values. (Hasshu instance)
 
-score
-------
+#### score
 Calculated score determining bounce probabilty.
 
-bounced
---------
+#### bounced
 Returns true/false if email is considered bounce. (Can be adjusted by threshold)
 
-threshold
-----------
+#### threshold
 Sets bounce score threshold. Default is 0.3.
 
-status
--------
+#### status
+
 Returns object containing enhanced status code, class, subject and detail.
 
 ```javascript
@@ -107,37 +98,28 @@ Returns object containing enhanced status code, class, subject and detail.
 }
 ```
 
-remoteMta
-----------
+#### remoteMta
 Returns array if remote mta headers were found.
 
-reportingMta
--------------
+#### reportingMta
 Returns array if reporting mta headers were found.
 
-diagnosticCodes
----------------
+#### diagnosticCodes
 Returns array if diagnostic codes were found.
 
-action
--------
+#### action
 Returns action value if header was found.
 
+### Methods:
 
-## Methods:
-
-isHard
---------
+####isHard()
 Returns true if email is considered a hard bounce.
 
-isSoft
---------
+####isSoft()
 Returns true if email is considered a soft bounce.
 
 
-
-
-License
+# License
 =======
 (The MIT License)
 
