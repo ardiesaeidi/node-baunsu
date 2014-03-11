@@ -1,11 +1,8 @@
 # Baunsu
-======
 Baunsu (bounce in japanese) is an email bounce detection library inspired by [Lamson Project's bounce detection algorithm](http://lamsonproject.org/blog/2009-07-09.html "Lamson Project's bounce detection algorithm").
 
 
 ## Usage
-------
-
 ```javascript
 var fs = require('fs'),
   Baunsu = require('baunsu');
@@ -34,13 +31,11 @@ You can use this module by hooking it to your mailserver whenever a bounced mail
 
 
 ## Installation
-============
     npm install baunsu
 
 
 
 ## Baunsu API
-===============
 
 ### Methods:
 
@@ -69,7 +64,6 @@ Emitted at the end of bounce detection.
 
 
 ## Baunsu Result
-================
 
 ### Properties:
 
@@ -120,7 +114,6 @@ Returns true if email is considered a soft bounce.
 
 
 # License
-=======
 (The MIT License)
 
 Copyright (c) 2012 Ardie Saeidi
