@@ -17,7 +17,7 @@
   , "keywords": ["bounce", "bounced email", "bounce detection", "bounce parser", "email", "email parser"]
   , "dependencies" : {
       "hasshu" : "0.2.x",
-      "iconv-lite" : "0.2.x"
+      "encoding" : "0.1.x"
     }
   , "devDependencies": {
       "vows": "latest"
