@@ -1,5 +1,5 @@
 # Baunsu
-Baunsu (bounce in japanese) is an email bounce detection library inspired by [Lamson Project's bounce detection algorithm](http://lamsonproject.org/blog/2009-07-09.html "Lamson Project's bounce detection algorithm").
+Baunsu (bounce in japanese) is an email bounce detection library inspired by [Lamson Project's bounce detection algorithm](https://github.com/zedshaw/lamson/blob/master/doc/lamsonproject.org/input/blog/2009-07-09.txt "Lamson Project's bounce detection algorithm").
 
 
 ## Usage
